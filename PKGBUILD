@@ -14,7 +14,9 @@ conflicts=("${pkgname%-git}")
 source=("git+$url.git"
 	'stationd.conf'
 	'stationd.service')
-sha256sums=('SKIP')
+sha256sums=('SKIP'
+	'8d08e03615a5cfd7e798ffc5916cfd712c26a0aed0211eda32d3c4e62eddd24d'
+	'9cdff0af127740ad53f1ecca5d798c2ffed64a418553babb8e89b75d3ec76ce8')
 
 pkgver() {
 	cd "$srcdir/uniclogs-software/${pkgname%-git}"
