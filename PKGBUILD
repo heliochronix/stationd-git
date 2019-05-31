@@ -1,7 +1,7 @@
 # Maintainer: Miles Simpson <miles.a.simpson@gmail.com>
 
 pkgname=stationd-git
-pkgver=r141.c4bbb0c
+pkgver=r142.b292cbd
 pkgrel=1
 pkgdesc="UniClOGS stationd housekeeping daemon"
 arch=('x86_64' 'aarch64')
