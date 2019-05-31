@@ -11,7 +11,9 @@ depends=('i2c-tools')
 makedepends=('git')
 provides=("${pkgname%-git}")
 conflicts=("${pkgname%-git}")
-source=("git+$url.git")
+source=("git+$url.git"
+	'stationd.conf'
+	'stationd.service')
 sha256sums=('SKIP')
 
 pkgver() {
@@ -32,4 +34,6 @@ build() {
 package() {
 	cd "$srcdir/uniclogs-software/${pkgname%-git}/build"
 	make DESTDIR="$pkgdir/" install
+	install -Dm0644 "${srcdir}"/stationd.service "${pkgdir}"/usr/lib/systemd/system/stationd.service
+	install -Dm0644 "${srcdir}"/stationd.conf "${pkgdir}"/usr/lib/tmpfiles.d/stationd.conf
 }

@@ -1,0 +1,11 @@
+[Unit]
+Description=UniClOGS stationd housekeeping daemon
+
+[Service]
+Type=forking
+Restart=always
+PIDFile=/run/stationd/stationd.pid
+ExecStart=/usr/bin/stationd -d
+
+[Install]
+WantedBy=multi-user.target
