@@ -1,7 +1,7 @@
 # Maintainer: Miles Simpson <miles.a.simpson@gmail.com>
 
 pkgname=stationd-git
-pkgver=r142.b292cbd
+pkgver=r143.83b59d8
 pkgrel=1
 pkgdesc="UniClOGS stationd housekeeping daemon"
 arch=('x86_64' 'aarch64')
@@ -15,8 +15,8 @@ source=("git+$url.git"
 	'stationd.conf'
 	'stationd.service')
 sha256sums=('SKIP'
-	'8d08e03615a5cfd7e798ffc5916cfd712c26a0aed0211eda32d3c4e62eddd24d'
-	'9cdff0af127740ad53f1ecca5d798c2ffed64a418553babb8e89b75d3ec76ce8')
+	'1fc36d7061df5571c47c4a4f38e1dadf76240e060f4a57f8da5986d2fc78cff5'
+	'eb0ae444e1813cc5b4f3ff5ffebc9fcbba1de79d03cbb5de16e9ef1d2658a7a5')
 
 pkgver() {
 	cd "$srcdir/uniclogs-software/${pkgname%-git}"

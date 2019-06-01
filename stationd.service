@@ -5,7 +5,7 @@ Description=UniClOGS stationd housekeeping daemon
 Type=forking
 Restart=always
 PIDFile=/run/stationd/stationd.pid
-ExecStart=/usr/bin/stationd -d
+ExecStart=/usr/bin/stationd -d -v
 
 [Install]
 WantedBy=multi-user.target
